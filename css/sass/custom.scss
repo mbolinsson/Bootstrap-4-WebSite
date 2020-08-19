@@ -1,0 +1,156 @@
+$theme-colors: ("primary": #ffbb00, "info": #3096fe);
+
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+.bg {
+  background: url("../assets/header-background.png") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  width: 110px;
+}
+
+.btn {
+  width: 160px;
+}
+
+.active {
+  border-bottom: 4px solid #ffbb00;
+}
+
+.button-resize {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-poppins-200 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.font-poppins-500 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.font-poppins-700 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.bigMarginBottom {
+  margin-bottom: 15rem;
+}
+
+@media (min-width: 992px) {
+  .relative {
+    position: relative;
+    right: 130px;
+  }
+
+  .relative2 {
+    position: relative;
+    left: 110px;
+  }
+}
+
+.littelYellowBox {
+  background-color: #ffbb003e;
+  color: #ffbb00;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 10px;
+  padding-top: 3px;
+}
+
+.featuresWrapper {
+  height: 500px;
+  width: 300px;
+}
+
+.featureiconwrappers {
+  width: 240px;
+}
+
+@media (max-width: 575.98px) {
+  .featureiconwrappers {
+    width: 150px;
+  }
+
+  .bigMarginSmalScreen {
+    margin-top: 10rem;
+  }
+}
+
+.featuresWrapperIcons {
+  width: 800px;
+}
+
+.worldBg {
+  background: url("../assets/worldBackground.svg") no-repeat center;
+  background-size: 41vw;
+  height: 60vh;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .m-8-custom {
+    margin: 40px 70px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .m-1-custom {
+    margin: 10px 30px;
+  }
+}
+
+.BgBlue {
+  background: url("/assets/BgBlue.svg") no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.iphones3Img {
+  position: relative;
+  top: 110px;
+  left: 60px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea[id="message"] {
+  background-color: rgba(194, 194, 194, 0.098);
+
+  &::placeholder {
+    color: rgba(194, 194, 194, 0.712);
+    font-size: 0.9rem;
+  }
+}
+
+.footerBg {
+  background: url("/assets/footerBg.png") no-repeat;
+  width: 100%;
+}
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
