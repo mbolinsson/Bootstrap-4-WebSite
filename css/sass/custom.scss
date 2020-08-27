@@ -3,7 +3,7 @@ $theme-colors: ("primary": #ffbb00, "info": #3096fe);
 html,
 body {
   width: auto !important;
-  overflow-x: hidden !important;
+
 }
 
 .bg {
@@ -54,7 +54,11 @@ body {
 }
 
 .bigMarginBottom {
-  margin-bottom: 15rem;
+  margin-bottom: 17rem;
+}
+
+.owl-item {
+  border-width: 0;
 }
 
 @media (min-width: 992px) {
@@ -102,6 +106,78 @@ body {
 .featuresWrapperIcons {
   width: 800px;
 }
+
+#iphoneSlider {
+  padding: 2vw 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.owl-item>div {
+  cursor: pointer;
+  margin: 15% 10%;
+  transition: margin 0.4s ease;
+}
+
+.owl-item.center>div {
+
+  position: relative;
+  z-index: -2;
+  cursor: auto;
+  margin: 0;
+}
+
+.owl-item.center+div+div {
+  opacity: .5;
+}
+
+.owl-item.active {
+  opacity: .5;
+}
+
+.owl-item.active+div {
+  opacity: 1;
+}
+
+.owl-item.center>div>img {
+  cursor: auto;
+  content: url("/assets/iphone.svg");
+}
+
+.owl-item:not(.center)>div:hover {
+  opacity: .75;
+}
+
+.owl-item:not(.center)>div>img {
+  content: url("/assets/iphoneScreen.svg");
+}
+
+@media (max-width: 1000px) {
+  .owl-item.active {
+    opacity: .5;
+  }
+
+  #iphoneSlider {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .iphone-slider-wrapper {
+    margin-top: 3rem;
+  }
+
+  #iphoneSlider {
+    padding: 0;
+  }
+
+  .owl-item.active {
+    opacity: 1;
+  }
+}
+
 
 .worldBg {
   background: url("../assets/worldBackground.svg") no-repeat center;
